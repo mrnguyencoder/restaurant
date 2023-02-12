@@ -1,4 +1,5 @@
 import Footer from "./components/Footer"
+import Gallery from "./components/Gallery"
 import Hero from "./components/Hero"
 import Menu from "./components/Menu"
 import NavBar from "./components/NavBar"
@@ -13,6 +14,7 @@ function App() {
     <Hero/>
     <Reservation/>
     <Menu/>
+    <Gallery/>
     <Testimonial/>
     <Footer/>
     </>
