@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 
 import DatePicker from 'react-datepicker';
-// import datepicker css
 import 'react-datepicker/dist/react-datepicker.css';
-// import timepicker
 import TimePicker from 'react-time-picker';
-// import timepicker css
 import '../timepicker.css';
 // import icons
 import { FaUsers, FaCalendar, FaClock } from 'react-icons/fa';
