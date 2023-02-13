@@ -21,19 +21,19 @@ function NavBar() {
   ]
   return (
     <div className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-gray-700/80'>
-    <div className='hidden sm:flex px-4'>
+      <div className='hidden sm:flex space-x-4 pl-4'>
       {links.map((item) => (
         <a key={item.href}
            href={item.href}>
             {item.label}
         </a>
       ))}
-    </div>
-    <div className='flex justify-between'>
-      <FaFacebookF className='mx-4' />
-      <FaTwitter className='mx-4' />
-      <FaInstagram className='mx-4' />
-    </div>
+      </div>
+      <div className='flex justify-between'>
+        <FaFacebookF className='mx-4' />
+        <FaTwitter className='mx-4' />
+        <FaInstagram className='mx-4' />
+      </div>
     {/* Hamburger Icon */}
     <div onClick={handleNav} className='sm:hidden z-10'>
       <FaBars size={20} className='mr-4 cursor-pointer' />
@@ -48,14 +48,14 @@ function NavBar() {
       }
     >
       <ul className='h-full w-full text-center pt-12'>
-        <li className='text-2xl py-8'>
           {links.map((item) => (
-          <a key={item.href}
-            href={item.href}>
-              {item.label}
-          </a>
+          <li className="text-2xl py-6">
+            <a key={item.href}
+              href={item.href}>
+                {item.label}
+            </a>
+          </li>
         ))}
-        </li>
       </ul>
     </div>
   </div>
