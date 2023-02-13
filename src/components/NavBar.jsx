@@ -20,7 +20,7 @@ function NavBar() {
     { href:'#testimonial', label:'Testimonial'},
   ]
   return (
-    <div className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-gray-700/80'>
+    <div className='w-full min-h-[50px] flex justify-between items-center z-10 text-white bg-gray-700/80'>
       <div className='hidden sm:flex space-x-4 pl-4'>
       {links.map((item) => (
         <a key={item.href}
