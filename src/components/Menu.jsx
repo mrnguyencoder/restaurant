@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import menu from '../assets/Neutral Modern Menu.png';
 
 function Menu() {
   return (
-    <div>Menu</div>
+    <div>
+      <img src={menu} alt="" className="" />
+    </div>
   )
 }
 
