@@ -1,24 +1,21 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import TimePicker from 'react-time-picker';
+import '../timepicker.css';
 import { FaUsers, FaCalendar, FaClock } from 'react-icons/fa';
 
 
 const Reservation = () => {
-  // date state
   const [startDate, setStartDate] = useState(new Date());
-  // clock state
   const [value, setValue] = useState('10:00');
 
   return (
-    <section className='relative top-96 z-30 pb-20 lg:py-[100px]'>
-      <div className='container mx-auto'>
-
-        {/* form */}
-          <div className='flex flex-col lg:flex-row gap-y-4 items-center justify-between mb-8'>
+    <section className='py-20 px-4'>
+          <div className=''>
             {/* datepicker */}
             <div>
-              <div className='flex items-center gap-x-[10px] font-semibold text-dark text-base mb-3'>
+              <div className='flex space-x-4'>
                 <FaCalendar />
                 <div>Choose Date</div>
               </div>
@@ -30,7 +27,7 @@ const Reservation = () => {
             </div>
             {/* timepicker */}
             <div>
-              <div className='flex items-center gap-x-[10px] font-semibold text-dark text-base mb-3'>
+              <div className='flex space-x-4'>
                 <FaClock />
                 <div>Choose Time</div>
               </div>
@@ -44,7 +41,7 @@ const Reservation = () => {
             </div>
             {/* person number */}
             <div>
-              <div className='flex items-center gap-x-[10px] font-semibold text-dark text-base mb-3'>
+              <div className='flex space-x-4'>
                 <FaUsers />
                 <div>How many people?</div>
               </div>
@@ -52,12 +49,11 @@ const Reservation = () => {
             </div>
           </div>
           {/* button */}
-          <div className='max-w-[316px] mx-auto flex justify-center'>
-            <button className='btn capitalize w-full lg:w-auto'>
-              {btnText}
+          <div className=''>
+            <button className='border px-6 py-2 rounded-full bg-blue-400'>
+              Submit
             </button>
           </div>
-      </div>
     </section>
   );
 };
